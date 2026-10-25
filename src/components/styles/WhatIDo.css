@@ -359,93 +359,133 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .whatIDO {
-    flex-direction: column;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 60px 0 !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    place-items: center !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  .what-box h2 {
-    margin: 50px 0;
-    font-size: 55px;
-    line-height: 53px;
+  .what-box {
+    width: calc(100% - 30px) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   .what-box:first-child {
-    justify-content: left;
+    justify-content: center !important;
   }
 
   .what-box:last-child {
-    height: 500px;
+    height: auto !important;
   }
 
-  .what-box {
-    width: 500px;
-    max-width: calc(100% - 50px);
-    margin: auto;
-  }
-
-  .what-content {
-    width: 100%;
+  .what-box h2 {
+    font-size: 36px !important;
+    line-height: 40px !important;
+    margin: 0 0 30px 0 !important;
+    text-align: center !important;
   }
 
   .what-box-in {
-    margin-left: 0px;
-    height: 450px;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
   }
 
-  .what-content h5,
-  .what-content-flex {
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  .what-noTouch:hover h5,
-  .what-content-active h5,
-  .what-noTouch:hover .what-content-flex,
-  .what-content-active .what-content-flex {
-    opacity: 1;
+  .what-border1,
+  .what-border2 {
+    display: none !important;
   }
 
   .what-content {
-    padding: 30px;
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 24px 18px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 14px !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
   }
 
-  .what-content p {
-    font-size: 11px;
+  .what-content::before,
+  .what-corner::before,
+  .what-content::after,
+  .what-corner::after {
+    display: none !important;
   }
 
-  .what-noTouch:hover,
-  .what-content-active {
-    padding: 10px 30px;
-  }
-
-  .what-tags {
-    font-size: 11px;
-  }
-
-  .what-noTouch:hover~.what-content,
-  .what-box-in:hover .what-noTouch:not(:hover),
-  .what-content.what-sibling {
-    padding: 5px 30px;
+  .what-content-in {
+    height: auto !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    animation: none !important;
   }
 
   .what-content h3 {
-    font-size: 25px;
+    font-size: 20px !important;
+    margin-bottom: 6px !important;
+    color: var(--accentColor) !important;
+  }
+
+  .what-content h4 {
+    font-size: 13px !important;
+    margin-bottom: 8px !important;
+    opacity: 0.6 !important;
+  }
+
+  .what-content p {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    margin-bottom: 14px !important;
+  }
+
+  .what-content-in h5 {
+    opacity: 0.7 !important;
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .what-content-flex {
+    opacity: 1 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .what-tags {
+    font-size: 11px !important;
+    padding: 3px 8px !important;
+    border-radius: 15px !important;
+    background: rgba(194, 164, 255, 0.1) !important;
+    border: 1px solid rgba(194, 164, 255, 0.25) !important;
+    color: #fff !important;
+  }
+
+  .what-arrow {
+    display: none !important;
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .whatIDO {
-    place-items: inherit;
-    align-items: start;
-    justify-content: left;
-  }
-
-  .what-box {
-    max-width: calc(100% - 25px);
-    margin: 0;
-  }
-}
 
 @media only screen and (min-width: 1950px) {
   .what-box h2 {

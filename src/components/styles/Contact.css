@@ -118,22 +118,38 @@ a.contact-social {
     gap: 10px;
   }
 }
-@media only screen and (max-width: 900px) {
-  .contact-flex {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .contact-flex p {
-    margin-bottom: 0px;
-  }
-  .contact-flex h4 {
-    margin-top: 20px;
-  }
+@media only screen and (max-width: 768px) {
   .contact-section {
-    margin-top: 50px;
-    padding-bottom: 50px;
+    padding: 60px 0 120px !important;
+    min-height: auto !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
   }
   .contact-container {
-    width: calc(100% - 25px);
+    width: calc(100% - 30px) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .contact-section h3 {
+    font-size: 28px !important;
+    margin-bottom: 22px !important;
+    text-align: left !important;
+  }
+  .contact-flex {
+    flex-direction: column !important;
+    gap: 28px !important;
+  }
+  .contact-flex p {
+    margin-bottom: 0px !important;
+  }
+  .contact-flex h4 {
+    margin-top: 14px !important;
+  }
+  .contact-box h2 {
+    font-size: 15px !important;
+    line-height: 22px !important;
   }
 }

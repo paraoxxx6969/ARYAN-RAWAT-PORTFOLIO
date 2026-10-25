@@ -101,3 +101,81 @@ div.resume-button span {
     margin-top: -1.5px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .icons-section {
+    position: fixed !important;
+    bottom: 15px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    transform: none !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+    pointer-events: none !important;
+    z-index: 999 !important;
+  }
+
+  .social-icons {
+    display: flex !important;
+    flex-direction: row !important;
+    position: static !important;
+    gap: 8px !important;
+    padding: 6px 12px !important;
+    background: rgba(11, 8, 12, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 25px !important;
+    pointer-events: auto !important;
+  }
+
+  .social-icons span {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .social-icons a {
+    position: static !important;
+    transform: none !important;
+    font-size: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    color: #fff !important;
+  }
+
+  .resume-button {
+    position: static !important;
+    transform: none !important;
+    font-size: 12px !important;
+    letter-spacing: 2px !important;
+    padding: 8px 16px !important;
+    background: var(--accentColor) !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+    border-radius: 20px !important;
+    pointer-events: auto !important;
+    box-shadow: 0 4px 15px rgba(194, 164, 255, 0.4) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .resume-button:hover {
+    color: #000 !important;
+  }
+
+  div.resume-button span,
+  .resume-button span {
+    color: #000 !important;
+    font-size: 14px !important;
+  }
+}
+

@@ -16,13 +16,14 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
-  const [isMobile] = useState<boolean>(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
   const [shouldRenderCharacter, setShouldRenderCharacter] = useState(false);
 
   useEffect(() => {
     const resizeHandler = () => {
       setSplitText();
       setIsDesktopView(window.innerWidth > 1024);
+      setIsMobile(window.innerWidth <= 768);
     };
     resizeHandler();
     window.addEventListener("resize", resizeHandler);
