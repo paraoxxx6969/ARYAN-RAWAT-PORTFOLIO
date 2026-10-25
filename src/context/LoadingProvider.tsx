@@ -6,6 +6,10 @@ import {
   useState,
 } from "react";
 import Loading from "../components/Loading";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface LoadingType {
   isLoading: boolean;
@@ -16,29 +20,61 @@ interface LoadingType {
 export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
+  // Check if user has already seen the loading screen this session
+  const hasVisited = sessionStorage.getItem("portfolio_visited") === "true";
+  const isMobile = window.innerWidth <= 768;
+
   const [isLoading, setIsLoading] = useState(() => {
-    // Skip loading on mobile
-    if (window.innerWidth <= 768) return false;
+    if (isMobile || hasVisited) return false;
     return true;
   });
   const [loading, setLoading] = useState(0);
 
-  const value = {
-    isLoading,
-    setIsLoading,
-    setLoading,
-  };
+  const value = { isLoading, setIsLoading, setLoading };
+
   useEffect(() => {
-    // Auto-start animations on mobile since there's no 3D model
-    if (window.innerWidth <= 768) {
+    // Mark session as visited so back-navigation skips loading
+    sessionStorage.setItem("portfolio_visited", "true");
+
+    // On back-navigation (hasVisited=true) or mobile, fire initialFX immediately
+    if (isMobile || hasVisited) {
+      // Kill all stale GSAP animations & ScrollTriggers from previous mount
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+      gsap.killTweensOf("*");
+
+      // Immediately make the main element visible (initialFX does this async normally)
+      const mainEl = document.querySelector("main");
+      if (mainEl) mainEl.classList.add("main-active");
+      document.body.style.overflowY = "auto";
+      document.body.style.backgroundColor = "#0b080c";
+
+      // Scroll to top cleanly
+      window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+
       import("../components/utils/initialFX").then((module) => {
         if (module.initialFX) {
           setTimeout(() => {
             module.initialFX();
-          }, 100);
+          }, 80);
+        }
+      });
+
+      // Re-initialize split text scroll animations after DOM settles
+      import("../components/utils/splitText").then((module) => {
+        if (module.default) {
+          setTimeout(() => {
+            ScrollTrigger.refresh();
+            module.default();
+          }, 200);
         }
       });
     }
+
+    // Cleanup: kill all GSAP instances when leaving this route
+    return () => {
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+      gsap.killTweensOf("*");
+    };
   }, []);
 
   useEffect(() => {}, [loading]);

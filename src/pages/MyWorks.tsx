@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // still used for internal project card links
 import { config } from "../config";
 import "./MyWorks.css";
 
@@ -6,9 +6,9 @@ const MyWorks = () => {
   return (
     <div className="myworks-page">
       <div className="myworks-header">
-        <Link to="/" className="back-button" data-cursor="disable">
+        <a href="/" className="back-button" data-cursor="disable">
           ← Back to Home
-        </Link>
+        </a>
         <h1>
           All <span>Works</span>
         </h1>

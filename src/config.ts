@@ -1,192 +1,141 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        name: "Aryan",
+        fullName: "Aryan Virendra Rawat",
+        initials: "AR",
+        title: "Software Developer | Web & AI Developer",
+        description: "Information Technology student & Software Developer crafting modern web applications, intelligent systems, and scalable digital solutions. Passionate about Web Development, AI, and algorithmic problem solving."
     },
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "paraoxxx6969",
+        email: "rawataryan5953@gmail.com",
+        location: "Mumbai, India"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I am an Information Technology student at Datta Meghe College of Engineering (DMCE) and a passionate Software Developer, Web Developer, and AI Developer based in Mumbai, India. I specialize in building responsive, high-performance web applications and intelligent systems using modern web frameworks, Python, and AI. With a strong algorithmic mindset honed on LeetCode, I transform complex engineering problems into clean, intuitive, and scalable applications."
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
+            position: "Software & Web Developer",
+            company: "Independent / Open Source",
+            period: "2023 - Present",
+            location: "Mumbai, India",
+            description: "Built and deployed 5+ full-stack and web applications spanning fintech simulation, civic tech, and developer tools with responsive, production-quality architectures.",
             responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
+                "Developed modern, responsive web applications with React, TypeScript, Vite, and TailwindCSS",
+                "Implemented client-side persistence and state management to simulate full backend workflows",
+                "Engineered stateful interactive workflows, routing, and component architectures",
+                "Contributed to open-source developer tooling and web utilities"
             ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            technologies: ["React", "TypeScript", "Vite", "TailwindCSS", "JavaScript", "Python", "Git"]
         },
         {
-            position: "AI Engineer",
-            company: "Freelance & Projects",
+            position: "Hackathon Competitor & Builder",
+            company: "Horizon 2026 · Nexus Tech (SVKM's SBMP)",
+            period: "2026",
+            location: "Mumbai, India",
+            description: "Built a production-ready, highly interactive interface under strict time constraints, demonstrating rapid prototyping, clean code, and UI execution.",
+            responsibilities: [
+                "Architected component hierarchies and rapid responsive layouts",
+                "Collaborated with peers to deliver feature-complete prototype before deadline",
+                "Integrated state management and interactive feedback mechanisms"
+            ],
+            technologies: ["React", "JavaScript", "TypeScript", "Responsive Design", "UI/UX"]
+        },
+        {
+            position: "Technical Workshops & Bootcamps",
+            company: "CSI-CATT · GITS · E-Cell (DMCE)",
             period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
+            location: "Navi Mumbai, India",
+            description: "Participated in rigorous technical workshops including Novice to Ninja: Backend Blitz, CodeSync Tech Bootcamp, Machine Learning 101, and Build It: Entrepreneurial Workshop.",
             responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
+                "Explored backend architecture, API patterns, and server-side workflows",
+                "Participated in hands-on coding bootcamps and machine learning foundations",
+                "Engaged in technical problem-solving sessions and entrepreneurial design thinking"
             ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
+            technologies: ["Backend Architecture", "REST APIs", "Machine Learning", "System Design"]
         },
         {
-            position: "Full-Stack Developer",
-            company: "Freelance & Projects",
-            period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
+            position: "B.E. in Information Technology",
+            company: "Datta Meghe College of Engineering (DMCE)",
+            period: "2023 - Present",
+            location: "Navi Mumbai, India",
+            description: "Pursuing Bachelor of Engineering in Information Technology. Developing deep fundamentals in Data Structures, Algorithms, Software Engineering, AI, and Database Systems.",
             responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
+                "Mastering Object-Oriented Programming, Data Structures & Algorithms",
+                "Active competitive programmer on LeetCode solving algorithmic challenges",
+                "Collaborating on engineering projects and tech community initiatives"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
-        },
-        {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
-            responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
-            ],
-            technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
-        },
-        {
-            position: "Graphic Designer",
-            company: "Freelance",
-            period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
-            responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
-            ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
-        },
-        {
-            position: "Microsoft Office",
-            company: "Begin Learning",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
-            responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
-            ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            technologies: ["Data Structures", "Algorithms", "C++", "Python", "JavaScript", "Software Engineering"]
         }
     ],
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/Drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali.",
-            link: "https://huggingface.co/red1-for-hek/drishti-ilm-x1"
+            title: "Bank Simulator",
+            category: "Fintech / Web App",
+            technologies: "React, JSX, LocalStorage DB, JavaScript, TailwindCSS",
+            image: "/images/bank_simulator.jpg",
+            description: "Full ATM and banking simulation supporting deposits, withdrawals, real-time balance tracking, and transaction history without requiring an external backend.",
+            link: "https://github.com/paraoxxx6969"
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/VoteChain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking.",
-            link: "https://github.com/red1-for-hek/smart-election-by-blockchain"
+            title: "Urban Eye",
+            category: "Civic Tech / Web App",
+            technologies: "React, TypeScript, Maps API, Civic Tech, TailwindCSS",
+            image: "/images/urban_eye.jpg",
+            description: "Civic engagement platform for reporting and tracking local urban issues with interactive maps and community upvoting, bridging the gap between citizens and local governance.",
+            link: "https://github.com/paraoxxx6969"
+        },
+        {
+            id: 3,
+            title: "Skill Swap",
+            category: "Community / EdTech",
+            technologies: "React, TypeScript, Vite, CSS, Context API",
+            image: "/images/skill_swap.jpg",
+            description: "Peer-to-peer skill exchange platform connecting mentors and learners. Features user profiles, skill listings, category filtering, and community matching.",
+            link: "https://github.com/paraoxxx6969"
         },
         {
             id: 4,
-            title: "Flood Spaces 2.0",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/FloodSpaces.png",
-            description: "Predicts flood risks across Bangladesh up to one month in advance and sends early alerts to help people prepare.",
-            link: "https://github.com/red1-for-hek/Flood-Spaces-2.0"
+            title: "ATM Simulator",
+            category: "Interactive Simulation",
+            technologies: "JavaScript, HTML5, CSS3, State Management",
+            image: "/images/atm_simulator.jpg",
+            description: "Realistic ATM interface simulating actual banking terminal flows, including secure PIN authentication, balance inquiry, cash dispensing, and comprehensive state handling.",
+            link: "https://github.com/paraoxxx6969"
         },
         {
             id: 5,
-            title: "Phoenix 3.0",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/Phoenix3.0.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience.",
-            link: "https://github.com/red1-for-hek/phoenix3.0"
-        },
-        {
-            id: 6,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/RedxChess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation.",
-            link: "/play"
-        },
-        {
-            id: 7,
-            title: "Prodesk",
-            category: "E-commerce",
-            technologies: "React, Node.js, MongoDB, Express, Stripe",
-            image: "/images/Prodesk.png",
-            description: "A complete e-commerce platform with secure checkout and smooth product browsing.",
-            link: "https://github.com/red1-for-hek/prodesk"
-        },
-        {
-            id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes.",
-            link: ""
+            title: "GUI Calculator",
+            category: "Utility / Web App",
+            technologies: "JavaScript, HTML5, CSS3, Keyboard Events",
+            image: "/images/gui_calculator.jpg",
+            description: "Polished interactive glassmorphism calculator supporting full arithmetic operations, keyboard event listeners, precision calculations, and responsive layout.",
+            link: "https://github.com/paraoxxx6969"
         }
     ],
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "rawataryan5953@gmail.com",
+        github: "https://github.com/paraoxxx6969",
+        linkedin: "https://www.linkedin.com/in/aryan-rawat-a440483a9/",
+        instagram: "https://www.instagram.com/aryan_rawat6931/",
+        leetcode: "https://leetcode.com/u/paradoxx6969/"
     },
     skills: {
         develop: {
-            title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            title: "SOFTWARE & WEB DEV",
+            description: "Full-scale web applications & scalable architectures",
+            details: "Engineering modern, interactive, and performant web applications using modern web technologies, React, TypeScript, and Node.js. Specializing in component design, responsive interfaces, and API integrations.",
+            tools: ["JavaScript (ES6+)", "TypeScript", "React", "Node.js", "Vite", "TailwindCSS", "HTML5", "CSS3", "REST APIs", "Git & GitHub"]
         },
         design: {
-            title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            title: "AI & CORE SYSTEMS",
+            description: "Problem solving, data structures & intelligent systems",
+            details: "Information Technology scholar with a strong algorithmic mindset. Experienced in Data Structures & Algorithms, LeetCode problem solving, AI integrations, Python, and local database systems.",
+            tools: ["Python", "AI & ML Foundations", "Data Structures", "Algorithms", "LeetCode", "C++", "LocalStorage DB", "Figma", "VS Code", "Problem Solving"]
         }
     }
 };
-
-

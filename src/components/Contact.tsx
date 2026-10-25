@@ -94,22 +94,13 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href={config.contact.twitter}
+              href={config.contact.leetcode}
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Facebook <MdArrowOutward />
+              LeetCode <MdArrowOutward />
             </a>
             <a
               href={config.contact.instagram}
